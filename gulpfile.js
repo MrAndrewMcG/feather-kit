@@ -4,6 +4,7 @@ var gulp  = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect');
+    concatCss = require('gulp-concat-css');
 
 gulp.task('log', function() {
   gutil.log('== My Log Task ==')
@@ -15,9 +16,15 @@ gulp.task('html', function() {
 });
 
 gulp.task('sass', function() {
-  gulp.src('src/stylesheets/*.scss')
+  gulp.src(['src/stylesheets/grid.scss',
+           'src/stylesheets/typography.scss',
+           'src/stylesheets/forms.scss',
+           'src/stylesheets/buttons.scss',
+           'src/stylesheets/navigation.scss',
+           'src/stylesheets/main.scss'])
   .pipe(sass({style: 'expanded'}))
     .on('error', gutil.log)
+  .pipe(concatCss("styles.css"))
   .pipe(gulp.dest('dist/stylesheets'))
 });
 
