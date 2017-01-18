@@ -1,1 +1,477 @@
 /* GRID */
+.grid {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid__item {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+// ONE COLUMN GRID
+.grid__item--one {
+  width: 100%;
+}
+
+// TWO COLUMN GRID
+.grid__item--one-half {
+  width: percentage(1/2);
+}
+.grid__item--two-halves {
+  width: percentage(2/2);
+}
+
+// THREE COLUMN GRID
+.grid__item--one-third {
+  width: percentage(1/3);
+}
+.grid__item--two-thirds {
+  width: percentage(2/3);
+}
+.grid__item--three-thirds {
+  width: percentage(3/3);
+}
+
+// FOUR COLUMN GRID
+.grid__item--one-fourth {
+  width: percentage(1/4);
+}
+.grid__item--two-fourths {
+  width: percentage(2/4);
+}
+.grid__item--three-fourths {
+  width: percentage(3/4);
+}
+.grid__item--four-fourths {
+  width: percentage(4/4);
+}
+
+// FIVE COLUMN GRID
+.grid__item--one-fifth {
+  width: percentage(1/5);
+}
+.grid__item--two-fifths {
+  width: percentage(2/5);
+}
+.grid__item--three-fifths {
+  width: percentage(3/5);
+}
+.grid__item--four-fifths {
+  width: percentage(4/5);
+}
+.grid__item--five-fifths {
+  width: percentage(5/5);
+}
+
+.grid_item--push-1-5 {
+  margin-left: percentage(1/5);
+}
+.grid_item--push-2-5 {
+  margin-left: percentage(2/5);
+}
+.grid_item--push-3-5 {
+  margin-left: percentage(3/5);
+}
+.grid_item--push-4-5 {
+  margin-left: percentage(4/5);
+}
+.grid_item--pull-1-5 {
+  margin-right: percentage(1/5);
+}
+.grid_item--pull-2-5 {
+  margin-right: percentage(2/5);
+}
+.grid_item--pull-3-5 {
+  margin-right: percentage(3/5);
+}
+.grid_item--pull-4-5 {
+  margin-right: percentage(4/5);
+}
+
+
+
+// SIX COLUMN GRID
+.grid__item--one-sixth {
+  width: percentage(1/6);
+}
+.grid__item--two-sixths {
+  width: percentage(2/6);
+}
+.grid__item--three-sixths {
+  width: percentage(3/6);
+}
+.grid__item--four-sixths {
+  width: percentage(4/6);
+}
+.grid__item--five-sixths {
+  width: percentage(5/6);
+}
+.grid__item--six-sixths {
+  width: percentage(6/6);
+}
+
+// SEVEN COLUMN GRID
+.grid__item--one-seventh {
+  width: percentage(1/7);
+}
+.grid__item--two-sevenths {
+  width: percentage(2/7);
+}
+.grid__item--three-sevenths {
+  width: percentage(3/7);
+}
+.grid__item--four-sevenths {
+  width: percentage(4/7);
+}
+.grid__item--five-sevenths {
+  width: percentage(5/7);
+}
+.grid__item--six-sevenths {
+  width: percentage(6/7);
+}
+.grid__item--seven-sevenths {
+  width: percentage(7/7);
+}
+
+// EIGHT COLUMN GRID
+.grid__item--one-eighth {
+  width: percentage(1/8);
+}
+.grid__item--two-eighths {
+  width: percentage(2/8);
+}
+.grid__item--three-eighths {
+  width: percentage(3/8);
+}
+.grid__item--four-eighths {
+  width: percentage(4/8);
+}
+.grid__item--five-eighths {
+  width: percentage(5/8);
+}
+.grid__item--six-eighths {
+  width: percentage(6/8);
+}
+.grid__item--seven-eighths {
+  width: percentage(7/8);
+}
+.grid__item--eight-eighths {
+  width: percentage(8/8);
+}
+
+// NINE COLUMN GRID
+.grid__item--one-ninth {
+  width: percentage(1/9);
+}
+.grid__item--two-ninths {
+  width: percentage(2/9);
+}
+.grid__item--three-ninths {
+  width: percentage(3/9);
+}
+.grid__item--four-ninths {
+  width: percentage(4/9);
+}
+.grid__item--five-ninths {
+  width: percentage(5/9);
+}
+.grid__item--six-ninths {
+  width: percentage(6/9);
+}
+.grid__item--seven-ninths {
+  width: percentage(7/9);
+}
+.grid__item--eight-ninths {
+  width: percentage(8/9);
+}
+.grid__item--nine-ninths {
+  width: percentage(9/9);
+}
+
+// TEN CULUMN GRID
+.grid__item--one-tenth {
+  width: percentage(1/10);
+}
+.grid__item--two-tenths {
+  width: percentage(2/10);
+}
+.grid__item--three-tenths {
+  width: percentage(3/10);
+}
+.grid__item--four-tenths {
+  width: percentage(4/10);
+}
+.grid__item--five-tenths {
+  width: percentage(5/10);
+}
+.grid__item--six-tenths {
+  width: percentage(6/10);
+}
+.grid__item--seven-tenths {
+  width: percentage(7/10);
+}
+.grid__item--eight-tenths {
+  width: percentage(8/10);
+}
+.grid__item--nine-tenths {
+  width: percentage(9/10);
+}
+.grid__item--ten-tenths {
+  width: percentage(10/10);
+}
+
+// ELEVEN COLUMN GRID
+.grid__item--one-eleventh {
+  width: percentage(1/11);
+}
+.grid__item--two-elevenths {
+  width: percentage(2/11);
+}
+.grid__item--three-elevenths {
+  width: percentage(3/11);
+}
+.grid__item--four-elevenths {
+  width: percentage(4/11);
+}
+.grid__item--five-elevenths {
+  width: percentage(5/11);
+}
+.grid__item--six-elevenths {
+  width: percentage(6/11);
+}
+.grid__item--seven-elevenths {
+  width: percentage(7/11);
+}
+.grid__item--eight-elevenths {
+  width: percentage(8/11);
+}
+.grid__item--nine-elevenths {
+  width: percentage(9/11);
+}
+.grid__item--ten-elevenths {
+  width: percentage(10/11);
+}
+.grid__item--eleven-elevenths {
+  width: percentage(11/11);
+}
+
+// TWELVE COLUMN GRID
+.grid__item--one-twelfth {
+  width: percentage(1/12);
+}
+.grid__item--two-twelfths {
+  width: percentage(2/12);
+}
+.grid__item--three-twelfths {
+  width: percentage(3/12);
+}
+.grid__item--four-twelfths {
+  width: percentage(4/12);
+}
+.grid__item--five-twelfths {
+  width: percentage(5/12);
+}
+.grid__item--six-twelfths {
+  width: percentage(6/12);
+}
+.grid__item--seven-twelfths {
+  width: percentage(7/12);
+}
+.grid__item--eight-twelfths {
+  width: percentage(8/12);
+}
+.grid__item--nine-twelfths {
+  width: percentage(9/12);
+}
+.grid__item--ten-twelfths {
+  width: percentage(10/12);
+}
+.grid__item--eleven-twelfths {
+  width: percentage(11/12);
+}
+.grid__item--twelve-twelfths {
+  width: percentage(12/12);
+}
+
+// THIRTEEN COLUMN GRID
+.grid__item--one-thirteenth {
+  width: percentage(1/13);
+}
+.grid__item--two-thirteenths {
+  width: percentage(2/13);
+}
+.grid__item--three-thirteenths {
+  width: percentage(3/13);
+}
+.grid__item--four-thirteenths {
+  width: percentage(4/13);
+}
+.grid__item--five-thirteenths {
+  width: percentage(5/13);
+}
+.grid__item--six-thirteenths {
+  width: percentage(6/13);
+}
+.grid__item--seven-thirteenths {
+  width: percentage(7/13);
+}
+.grid__item--eight-thirteenths {
+  width: percentage(8/13);
+}
+.grid__item--nine-thirteenths {
+  width: percentage(9/13);
+}
+.grid__item--ten-thirteenths {
+  width: percentage(10/13);
+}
+.grid__item--eleven-thirteenths {
+  width: percentage(11/13);
+}
+.grid__item--twelve-thirteenths {
+  width: percentage(12/13);
+}
+.grid__item--thirteen-thirteenths {
+  width: percentage(13/13);
+}
+
+// FOURTEEN COLUMN GRID
+.grid__item--one-fourteenth {
+  width: percentage(1/14);
+}
+.grid__item--two-fourteenths {
+  width: percentage(2/14);
+}
+.grid__item--three-fourteenths {
+  width: percentage(3/14);
+}
+.grid__item--four-fourteenths {
+  width: percentage(4/14);
+}
+.grid__item--five-fourteenths {
+  width: percentage(5/14);
+}
+.grid__item--six-fourteenths {
+  width: percentage(6/14);
+}
+.grid__item--seven-fourteenths {
+  width: percentage(7/14);
+}
+.grid__item--eight-fourteenths {
+  width: percentage(8/14);
+}
+.grid__item--nine-fourteenths {
+  width: percentage(9/14);
+}
+.grid__item--ten-fourteenths {
+  width: percentage(10/14);
+}
+.grid__item--eleven-fourteenths {
+  width: percentage(11/14);
+}
+.grid__item--twelve-fourteenths {
+  width: percentage(12/14);
+}
+.grid__item--thirteen-fourteenths {
+  width: percentage(13/14);
+}
+.grid__item--fourteen-fourteenths {
+  width: percentage(14/14);
+}
+
+// FIFTEEN COLUMN GRID
+.grid__item--one-fifteenth {
+  width: percentage(1/15);
+}
+.grid__item--two-fifteenths {
+  width: percentage(2/15);
+}
+.grid__item--three-fifteenths {
+  width: percentage(3/15);
+}
+.grid__item--four-fifteenths {
+  width: percentage(4/15);
+}
+.grid__item--five-fifteenths {
+  width: percentage(5/15);
+}
+.grid__item--six-fifteenths {
+  width: percentage(6/15);
+}
+.grid__item--seven-fifteenths {
+  width: percentage(7/15);
+}
+.grid__item--eight-fifteenths {
+  width: percentage(8/15);
+}
+.grid__item--nine-fifteenths {
+  width: percentage(9/15);
+}
+.grid__item--ten-fifteenths {
+  width: percentage(10/15);
+}
+.grid__item--eleven-fifteenths {
+  width: percentage(11/15);
+}
+.grid__item--twelve-fifteenths {
+  width: percentage(12/15);
+}
+.grid__item--thirteen-fifteenths {
+  width: percentage(13/15);
+}
+.grid__item--fourteen-fifteenths {
+  width: percentage(14/15);
+}
+.grid__item--fifteen-fifteenths {
+  width: percentage(15/15);
+}
+
+// SIXTEEN COLUMN GRID
+.grid__item--one-sixteenth {
+  width: percentage(1/16);
+}
+.grid__item--two-sixteenths {
+  width: percentage(2/16);
+}
+.grid__item--three-sixteenths {
+  width: percentage(3/16);
+}
+.grid__item--four-sixteenths {
+  width: percentage(4/16);
+}
+.grid__item--five-sixteenths {
+  width: percentage(5/16);
+}
+.grid__item--six-sixteenths {
+  width: percentage(6/16);
+}
+.grid__item--seven-sixteenths {
+  width: percentage(7/16);
+}
+.grid__item--eight-sixteenths {
+  width: percentage(8/16);
+}
+.grid__item--nine-sixteenths {
+  width: percentage(9/16);
+}
+.grid__item--ten-sixteenths {
+  width: percentage(10/16);
+}
+.grid__item--eleven-sixteenths {
+  width: percentage(11/16);
+}
+.grid__item--twelve-sixteenths {
+  width: percentage(12/16);
+}
+.grid__item--thirteen-sixteenths {
+  width: percentage(13/16);
+}
+.grid__item--fourteen-sixteenths {
+  width: percentage(14/16);
+}
+.grid__item--fifteen-sixteenths {
+  width: percentage(15/16);
+}
+.grid__item--sixteen-sixteenths {
+  width: percentage(16/16);
+}
