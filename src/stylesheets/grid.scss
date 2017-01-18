@@ -6,6 +6,7 @@
 }
 .grid__item {
   padding: 10px;
+  box-sizing: border-box;
 }
 
 // ONE COLUMN GRID
@@ -62,6 +63,33 @@
 .grid__item--five-fifths {
   width: percentage(5/5);
 }
+
+.grid_item--push-1-5 {
+  margin-left: percentage(1/5);
+}
+.grid_item--push-2-5 {
+  margin-left: percentage(2/5);
+}
+.grid_item--push-3-5 {
+  margin-left: percentage(3/5);
+}
+.grid_item--push-4-5 {
+  margin-left: percentage(4/5);
+}
+.grid_item--pull-1-5 {
+  margin-right: percentage(1/5);
+}
+.grid_item--pull-2-5 {
+  margin-right: percentage(2/5);
+}
+.grid_item--pull-3-5 {
+  margin-right: percentage(3/5);
+}
+.grid_item--pull-4-5 {
+  margin-right: percentage(4/5);
+}
+
+
 
 // SIX COLUMN GRID
 .grid__item--one-sixth {

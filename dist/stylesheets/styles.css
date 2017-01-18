@@ -8,6 +8,7 @@
 
 .grid__item {
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .grid__item--one {
@@ -68,6 +69,38 @@
 
 .grid__item--five-fifths {
   width: 100%;
+}
+
+.grid_item--push-1-5 {
+  margin-left: 20%;
+}
+
+.grid_item--push-2-5 {
+  margin-left: 40%;
+}
+
+.grid_item--push-3-5 {
+  margin-left: 60%;
+}
+
+.grid_item--push-4-5 {
+  margin-left: 80%;
+}
+
+.grid_item--pull-1-5 {
+  margin-right: 20%;
+}
+
+.grid_item--pull-2-5 {
+  margin-right: 40%;
+}
+
+.grid_item--pull-3-5 {
+  margin-right: 60%;
+}
+
+.grid_item--pull-4-5 {
+  margin-right: 80%;
 }
 
 .grid__item--one-sixth {
